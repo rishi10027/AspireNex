@@ -47,8 +47,11 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - Inspired by the need for efficient web scraping tools in e-commerce analytics.
 - Special thanks to the open-source community for invaluable libraries and frameworks.
 
----
-![Screenshot 2024-07-03 142212](https://github.com/rishi10027/AspireNex/assets/116270413/7a36c5fb-a47a-4b57-b259-2e9d985e91ca)
+---Screenshots--
+![Screenshot 2024-07-03 141748](https://github.com/rishi10027/AspireNex/assets/116270413/150630b4-a1e2-49a5-84c8-7858e3f41476)
+![Screenshot 2024-07-03 141804](https://github.com/rishi10027/AspireNex/assets/116270413/2b590ad5-a6e8-4ec1-8389-de7cbace28d2)
+![Screenshot 2024-07-03 141849](https://github.com/rishi10027/AspireNex/assets/116270413/38d05407-14b4-4634-a146-4067d279d4cd)
+![Screenshot 2024-07-03 142212](https://github.com/rishi10027/AspireNex/assets/116270413/9050d40d-2d46-4c7b-abcf-c9bb63e376db)
 
 Thank you for using Scrapper! If you encounter any issues or have suggestions, please open an issue on GitHub or contact us via rishi.varshney100@gmail.com.
 
