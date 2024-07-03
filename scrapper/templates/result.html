@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .product-details {
+            margin-bottom: 20px;
+        }
+
+        .product-details p {
+            margin: 10px 0;
+        }
+
+        .product-details strong {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .product-details ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .product-details ul li {
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        .error {
+            color: red;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #337ab7;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #23527c;
+        }
+
+        center {
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Product Details</h1>
+        {% if product.error %}
+            <p class="error">Error: {{ product.error }}</p>
+        {% else %}
+            <div class="product-details">
+                <p><strong>Title:</strong> {{ product.title }}</p>
+                <p><strong>Price:</strong> {{ product.price }}</p>
+                <p><strong>Specifications:</strong></p>
+                <ul>
+                    {% for spec in product.specifications %}
+                        <li>{{ spec }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+        <center><a href="/">Back</a></center>
+    </div>
+</body>
+</html>
