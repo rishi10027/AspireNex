@@ -1,4 +1,4 @@
-# Scrapper - E-commerce Web Scraping Website
+# ScrapX - E-commerce Web Scraping Website
 
 Scrapper is a Flask-based web application designed for scraping product information from e-commerce websites. It allows users to extract product details such as title, price, and specifications from any given product URL. This tool is invaluable for market analysis, price comparison, and monitoring competitor products in real-time.
 
